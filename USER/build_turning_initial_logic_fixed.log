@@ -1,0 +1,21 @@
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'FreeRTOS'
+compiling adc.c...
+..\HARDWARE\adc.c(650): error:  #7: unrecognized token
+  函数功能：电磁传感器采样初始化
+..\HARDWARE\adc.c(650): error:  #20: identifier "\u51fd\u6570\u529f\u80fd" is undefined
+  函数功能：电磁传感器采样初始化
+..\HARDWARE\adc.c(650): error:  #65: expected a ";"
+  函数功能：电磁传感器采样初始化
+..\HARDWARE\adc.c(651): error:  #7: unrecognized token
+  入口参数：无
+..\HARDWARE\adc.c(652): error:  #7: unrecognized token
+  返回  值：无
+..\HARDWARE\adc.c(696): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+..\HARDWARE\adc.c(581): warning:  #550-D: variable "Candidate_Line_Type"  was set but never used
+  	 u8 Dark_Found,Bright_Found,Candidate_Line_Type=0;
+..\HARDWARE\adc.c(696): error: At end of source:  #67: expected a "}"
+..\HARDWARE\adc.c: 2 warnings, 6 errors
+"..\OBJ\WHEELTEC.axf" - 6 Error(s), 2 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:05

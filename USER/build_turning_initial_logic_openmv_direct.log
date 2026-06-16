@@ -1,0 +1,71 @@
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'FreeRTOS'
+compiling adc.c...
+..\HARDWARE\adc.c(288): error:  #20: identifier "Candidate_Median" is undefined
+  		CCD_Median=Candidate_Median;
+..\HARDWARE\adc.c(292): warning:  #940-D: missing return statement at end of non-void function "OpenMV_Use_Line_Data" 
+  	}
+..\HARDWARE\adc.c(294): error:  #169: expected a declaration
+  	return 1;
+..\HARDWARE\adc.c(295): error:  #169: expected a declaration
+  }
+..\HARDWARE\adc.c(323): warning:  #12-D: parsing restarts here after previous syntax error
+  		GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5;
+..\HARDWARE\adc.c(324): error:  #77-D: this declaration has no storage class or type specifier
+  		GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;//普通输出模式
+..\HARDWARE\adc.c(324): error:  #65: expected a ";"
+  		GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;//普通输出模式
+..\HARDWARE\adc.c(325): error:  #77-D: this declaration has no storage class or type specifier
+  		GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;//推挽输出
+..\HARDWARE\adc.c(325): error:  #65: expected a ";"
+  		GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;//推挽输出
+..\HARDWARE\adc.c(326): error:  #77-D: this declaration has no storage class or type specifier
+  		GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;//2MHz
+..\HARDWARE\adc.c(326): error:  #65: expected a ";"
+  		GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;//2MHz
+..\HARDWARE\adc.c(327): error:  #77-D: this declaration has no storage class or type specifier
+  		GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;//上拉
+..\HARDWARE\adc.c(327): error:  #65: expected a ";"
+  		GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;//上拉
+..\HARDWARE\adc.c(328): error:  #79: expected a type specifier
+  		GPIO_Init(GPIOA, &GPIO_InitStructure);//初始化
+..\HARDWARE\adc.c(328): error:  #79: expected a type specifier
+  		GPIO_Init(GPIOA, &GPIO_InitStructure);//初始化
+..\HARDWARE\adc.c(328): error:  #260-D: explicit type is missing ("int" assumed)
+  		GPIO_Init(GPIOA, &GPIO_InitStructure);//初始化
+..\HARDWARE\adc.c(328): error:  #147: declaration is incompatible with "void GPIO_Init(GPIO_TypeDef *, GPIO_InitTypeDef *)"  (declared at line 470 of "..\FWLIB\inc\stm32f4xx_gpio.h")
+  		GPIO_Init(GPIOA, &GPIO_InitStructure);//初始化
+..\HARDWARE\adc.c(332): error:  #79: expected a type specifier
+      RCC_AHB2PeriphResetCmd(RCC_APB2Periph_ADC1, ENABLE);    // ADC1复位
+..\HARDWARE\adc.c(332): error:  #757: constant "ENABLE"  is not a type name
+      RCC_AHB2PeriphResetCmd(RCC_APB2Periph_ADC1, ENABLE);    // ADC1复位
+..\HARDWARE\adc.c(332): error:  #260-D: explicit type is missing ("int" assumed)
+      RCC_AHB2PeriphResetCmd(RCC_APB2Periph_ADC1, ENABLE);    // ADC1复位
+..\HARDWARE\adc.c(332): error:  #147: declaration is incompatible with "void RCC_AHB2PeriphResetCmd(uint32_t, FunctionalState)"  (declared at line 596 of "..\FWLIB\inc\stm32f4xx_rcc.h")
+      RCC_AHB2PeriphResetCmd(RCC_APB2Periph_ADC1, ENABLE);    // ADC1复位
+..\HARDWARE\adc.c(333): error:  #79: expected a type specifier
+      RCC_AHB2PeriphResetCmd(RCC_APB2Periph_ADC1, DISABLE);   // 复位结束
+..\HARDWARE\adc.c(333): error:  #757: constant "DISABLE"  is not a type name
+      RCC_AHB2PeriphResetCmd(RCC_APB2Periph_ADC1, DISABLE);   // 复位结束
+..\HARDWARE\adc.c(333): error:  #260-D: explicit type is missing ("int" assumed)
+      RCC_AHB2PeriphResetCmd(RCC_APB2Periph_ADC1, DISABLE);   // 复位结束
+..\HARDWARE\adc.c(335): error:  #77-D: this declaration has no storage class or type specifier
+  		ADC_CommonInitStructure.ADC_Mode = ADC_Mode_Independent;//独立模式
+..\HARDWARE\adc.c(335): error:  #65: expected a ";"
+  		ADC_CommonInitStructure.ADC_Mode = ADC_Mode_Independent;//独立模式
+..\HARDWARE\adc.c(336): error:  #77-D: this declaration has no storage class or type specifier
+  		ADC_CommonInitStructure.ADC_TwoSamplingDelay = ADC_TwoSamplingDelay_5Cycles;//两个采样阶段之间的延迟5个时钟
+..\HARDWARE\adc.c(336): error:  #65: expected a ";"
+  		ADC_CommonInitStructure.ADC_TwoSamplingDelay = ADC_TwoSamplingDelay_5Cycles;//两个采样阶段之间的延迟5个时钟
+..\HARDWARE\adc.c(337): error:  #77-D: this declaration has no storage class or type specifier
+  		ADC_CommonInitStructure.ADC_DMAAccessMode = ADC_DMAAccessMode_Disabled; //DMA失能
+..\HARDWARE\adc.c(337): error:  #65: expected a ";"
+  		ADC_CommonInitStructure.ADC_DMAAccessMode = ADC_DMAAccessMode_Disabled; //DMA失能
+..\HARDWARE\adc.c(338): error:  #77-D: this declaration has no storage class or type specifier
+  		ADC_CommonInitStructure.ADC_Prescaler = ADC_Prescaler_Div4;//预分频4分频。ADCCLK=PCLK2/4=84/4=21Mhz,ADC时钟最好不要超过36Mhz 
+..\HARDWARE\adc.c(338): error:  #65: expected a ";"
+  		ADC_CommonInitStructure.ADC_Prescaler = ADC_Prescaler_Div4;//预分频4分频。ADCCLK=PCLK2/4=84/4=21Mhz,ADC时钟最好不要超过36Mhz 
+..\HARDWARE\adc.c: 2 warnings, 30 errors
+"..\OBJ\WHEELTEC.axf" - 30 Error(s), 2 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:04
