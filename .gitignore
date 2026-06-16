@@ -1,0 +1,8 @@
+# Claude Code session files
+.claude/
+
+# Keil per-user GUI state
+*.uvguix.*
+
+# Local clean script
+keilkilll.bat
