@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\OBJ\WHEELTEC.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\OBJ\WHEELTEC.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Mon Jun 15 17:51:04 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Jun 16 16:30:52 2026
 <BR><P>
 <H3>Maximum Stack Usage =        448 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -575,9 +575,9 @@ Global Symbols
 
 <P><STRONG><a name="[7b]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
 </UL>
 
 <P><STRONG><a name="[21c]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
@@ -657,11 +657,11 @@ Global Symbols
 <P><STRONG><a name="[221]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
 <P><STRONG><a name="[88]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dsqrt
+<BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dsqrt
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
 </UL>
 
 <P><STRONG><a name="[222]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
@@ -1054,7 +1054,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Balance_task
 </UL>
 
-<P><STRONG><a name="[a8]"></a>Get_RC_CCD</STRONG> (Thumb, 604 bytes, Stack size 16 bytes, balance.o(i.Get_RC_CCD))
+<P><STRONG><a name="[a8]"></a>Get_RC_CCD</STRONG> (Thumb, 670 bytes, Stack size 16 bytes, balance.o(i.Get_RC_CCD))
 <BR><BR>[Stack]<UL><LI>Max Depth = 424<LI>Call Chain = Get_RC_CCD &rArr; Drive_Motor &rArr; __hardfp_pow &rArr; __kernel_poly &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Drive_Motor
@@ -2187,7 +2187,7 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f40_41xxx.o(RESET)
 </UL>
 <P><STRONG><a name="[39]"></a>USART3_IRQHandler</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, usartx.o(i.USART3_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = USART3_IRQHandler &rArr; OpenMV_Parse_Byte &rArr; OpenMV_Parse_Line &rArr; OpenMV_Parse_Number
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = USART3_IRQHandler &rArr; OpenMV_Parse_Byte &rArr; OpenMV_Parse_Line &rArr; OpenMV_Parse_Number
 </UL>
 <BR>[Calls]<UL><LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ReceiveData
 <LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_GetITStatus
@@ -3094,7 +3094,7 @@ Global Symbols
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_pow
 </UL>
 
-<P><STRONG><a name="[71]"></a>adc_task</STRONG> (Thumb, 166 bytes, Stack size 8 bytes, adc.o(i.adc_task))
+<P><STRONG><a name="[71]"></a>adc_task</STRONG> (Thumb, 170 bytes, Stack size 8 bytes, adc.o(i.adc_task))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = adc_task &rArr; vTaskDelayUntil &rArr; xTaskResumeAll &rArr; xTaskIncrementTick &rArr; __2printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelayUntil
@@ -3943,20 +3943,20 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
 
-<P><STRONG><a name="[1c3]"></a>OpenMV_Use_Line_Data</STRONG> (Thumb, 120 bytes, Stack size 0 bytes, adc.o(i.OpenMV_Use_Line_Data))
+<P><STRONG><a name="[1c3]"></a>OpenMV_Use_Line_Data</STRONG> (Thumb, 138 bytes, Stack size 0 bytes, adc.o(i.OpenMV_Use_Line_Data))
 <BR><BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_task
 </UL>
 
 <P><STRONG><a name="[12e]"></a>OpenMV_Parse_Byte</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, usartx.o(i.OpenMV_Parse_Byte))
-<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = OpenMV_Parse_Byte &rArr; OpenMV_Parse_Line &rArr; OpenMV_Parse_Number
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = OpenMV_Parse_Byte &rArr; OpenMV_Parse_Line &rArr; OpenMV_Parse_Number
 </UL>
 <BR>[Calls]<UL><LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OpenMV_Parse_Line
 </UL>
 <BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART3_IRQHandler
 </UL>
 
-<P><STRONG><a name="[12f]"></a>OpenMV_Parse_Line</STRONG> (Thumb, 184 bytes, Stack size 24 bytes, usartx.o(i.OpenMV_Parse_Line))
-<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = OpenMV_Parse_Line &rArr; OpenMV_Parse_Number
+<P><STRONG><a name="[12f]"></a>OpenMV_Parse_Line</STRONG> (Thumb, 242 bytes, Stack size 32 bytes, usartx.o(i.OpenMV_Parse_Line))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = OpenMV_Parse_Line &rArr; OpenMV_Parse_Number
 </UL>
 <BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OpenMV_Parse_Number
 </UL>
@@ -4489,9 +4489,9 @@ Local Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
 <LI><a href="#[1b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
